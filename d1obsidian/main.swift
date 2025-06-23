@@ -17,14 +17,19 @@ struct Entry: Codable {
     var text: String?
     var creationDate: Date
     var timeZone: String
-    var latitude: Double?
-    var longtiude: Double?
-    var placeName: String?
-    var localityName: String?
-    var administrativeArea: String?
+    var location: Location?
     var weather: Weather?
     var photos: [Photo]?
     var videos: [Video]?
+}
+
+struct Location: Codable {
+    var latitude: Double?
+    var longitude: Double?
+    var placeName: String?
+    var localityName: String?
+    var administrativeArea: String?
+    var country: String?
 }
 
 struct Weather: Codable {
