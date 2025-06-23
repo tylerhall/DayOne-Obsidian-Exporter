@@ -52,8 +52,8 @@ struct Video: Codable {
     var md5: String
 }
 
-let journalPath = CommandLine.arguments[0]
-let outputPath = CommandLine.arguments[1]
+let journalPath = CommandLine.arguments[1]
+let outputPath = CommandLine.arguments[2]
 
 let journalURL = URL(fileURLWithPath: journalPath)
 let outputDirURL = URL(fileURLWithPath: outputPath)
